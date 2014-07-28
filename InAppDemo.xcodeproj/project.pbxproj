@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26727B0A19861C8000A4C5E7 /* PurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26727B0819861C8000A4C5E7 /* PurchaseViewController.m */; };
+		26727B0B19861C8000A4C5E7 /* PurchaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26727B0919861C8000A4C5E7 /* PurchaseViewController.xib */; };
 		26C4E4311985D6DD0070B323 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C4E4301985D6DD0070B323 /* Foundation.framework */; };
 		26C4E4331985D6DD0070B323 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C4E4321985D6DD0070B323 /* CoreGraphics.framework */; };
 		26C4E4351985D6DD0070B323 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C4E4341985D6DD0070B323 /* UIKit.framework */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26727B0719861C8000A4C5E7 /* PurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseViewController.h; sourceTree = "<group>"; };
+		26727B0819861C8000A4C5E7 /* PurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseViewController.m; sourceTree = "<group>"; };
+		26727B0919861C8000A4C5E7 /* PurchaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchaseViewController.xib; sourceTree = "<group>"; };
 		26C4E42D1985D6DD0070B323 /* InAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C4E4301985D6DD0070B323 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		26C4E4321985D6DD0070B323 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +124,9 @@
 				26C4E43F1985D6DD0070B323 /* InAppDemoAppDelegate.h */,
 				26C4E4401985D6DD0070B323 /* InAppDemoAppDelegate.m */,
 				26C4E4421985D6DD0070B323 /* Main.storyboard */,
+				26727B0719861C8000A4C5E7 /* PurchaseViewController.h */,
+				26727B0819861C8000A4C5E7 /* PurchaseViewController.m */,
+				26727B0919861C8000A4C5E7 /* PurchaseViewController.xib */,
 				26C4E4451985D6DD0070B323 /* InAppDemoViewController.h */,
 				26C4E4461985D6DD0070B323 /* InAppDemoViewController.m */,
 				26C4E4481985D6DD0070B323 /* Images.xcassets */,
@@ -242,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26C4E4491985D6DD0070B323 /* Images.xcassets in Resources */,
+				26727B0B19861C8000A4C5E7 /* PurchaseViewController.xib in Resources */,
 				26C4E43B1985D6DD0070B323 /* InfoPlist.strings in Resources */,
 				26C4E4441985D6DD0070B323 /* Main.storyboard in Resources */,
 			);
@@ -263,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26C4E4411985D6DD0070B323 /* InAppDemoAppDelegate.m in Sources */,
+				26727B0A19861C8000A4C5E7 /* PurchaseViewController.m in Sources */,
 				26C4E4471985D6DD0070B323 /* InAppDemoViewController.m in Sources */,
 				26C4E43D1985D6DD0070B323 /* main.m in Sources */,
 			);
@@ -477,6 +487,7 @@
 				26C4E4611985D6DD0070B323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26C4E4621985D6DD0070B323 /* Build configuration list for PBXNativeTarget "InAppDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +496,7 @@
 				26C4E4641985D6DD0070B323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
