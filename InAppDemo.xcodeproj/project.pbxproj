@@ -21,6 +21,7 @@
 		26C4E4521985D6DD0070B323 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C4E4341985D6DD0070B323 /* UIKit.framework */; };
 		26C4E45A1985D6DD0070B323 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26C4E4581985D6DD0070B323 /* InfoPlist.strings */; };
 		26C4E45C1985D6DD0070B323 /* InAppDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C4E45B1985D6DD0070B323 /* InAppDemoTests.m */; };
+		26C4E4661985DA310070B323 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C4E4651985DA310070B323 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		26C4E4571985D6DD0070B323 /* InAppDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InAppDemoTests-Info.plist"; sourceTree = "<group>"; };
 		26C4E4591985D6DD0070B323 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26C4E45B1985D6DD0070B323 /* InAppDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InAppDemoTests.m; sourceTree = "<group>"; };
+		26C4E4651985DA310070B323 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				26C4E4331985D6DD0070B323 /* CoreGraphics.framework in Frameworks */,
 				26C4E4351985D6DD0070B323 /* UIKit.framework in Frameworks */,
 				26C4E4311985D6DD0070B323 /* Foundation.framework in Frameworks */,
+				26C4E4661985DA310070B323 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +104,7 @@
 		26C4E42F1985D6DD0070B323 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26C4E4651985DA310070B323 /* StoreKit.framework */,
 				26C4E4301985D6DD0070B323 /* Foundation.framework */,
 				26C4E4321985D6DD0070B323 /* CoreGraphics.framework */,
 				26C4E4341985D6DD0070B323 /* UIKit.framework */,
@@ -200,6 +204,14 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = alex.huang;
 				TargetAttributes = {
+					26C4E42C1985D6DD0070B323 = {
+						DevelopmentTeam = BW29PBY5WT;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
 					26C4E44D1985D6DD0070B323 = {
 						TestTargetID = 26C4E42C1985D6DD0070B323;
 					};
@@ -334,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -366,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -377,10 +389,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InAppDemo/InAppDemo-Prefix.pch";
 				INFOPLIST_FILE = "InAppDemo/InAppDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,10 +406,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InAppDemo/InAppDemo-Prefix.pch";
 				INFOPLIST_FILE = "InAppDemo/InAppDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

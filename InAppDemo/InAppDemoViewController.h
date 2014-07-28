@@ -10,4 +10,9 @@
 
 @interface InAppDemoViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *level2Button;
+
+
+- (IBAction)purchaseItem:(id)sender;
+
 @end
