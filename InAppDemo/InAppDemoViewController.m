@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    _purchaseController = [[PurchaseViewController alloc] init];
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:_purchaseController];
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,5 +30,14 @@
 }
 
 - (IBAction)purchaseItem:(id)sender {
+    _purchaseController.productID = @"<Your Product ID Goes HERE>";
+    
+    [self.navigationController pushViewController:_purchaseController animated:YES];
+    [_purchaseController getProductInfo:self];
 }
+
+-(void)enableLevel2{
+    _level2Button.enabled = YES;
+}
+
 @end

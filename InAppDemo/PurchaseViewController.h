@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <StoreKit/StoreKit.h>
+#import "InAppDemoViewController.h"
 
 @interface PurchaseViewController : UIViewController <SKPaymentTransactionObserver, SKProductsRequestDelegate>
 
@@ -20,6 +21,7 @@
 @property (strong, nonatomic) SKProduct *product;
 @property (strong, nonatomic) NSString *productID;
 
--(void)getProductInfo:(UIViewController *)viewController;
+-(void)getProductInfo:(InAppDemoViewController *)viewController;
+-(IBAction)buyProduct:(id)sender;
 
 @end
